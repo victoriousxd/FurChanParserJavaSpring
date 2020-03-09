@@ -1,0 +1,35 @@
+package com.example.demo.domain;
+import java.io.Serializable;
+import java.util.Calendar;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//import org.hibernate.annotations.TypeDef;
+
+/*
+*
+*
+*     Boards Table Structure
+        | board | title | per_page | pages
+    Threads Table Structure
+    board name | thread no | closed | last_modified | timestamp | sub | com | replies | archived
+*
+*
+* */
+
+@Entity
+@Table(name = "boards")
+public class Boards {
+    @Column(name = "id")
+    int id;
+    @Column(name = "board")
+    String board;
+    @Column(name = "title")
+    String title;
+    @Column(name = "per_page")
+    int per_page;
+    @Column(name = "pages")
+    int pages;
+}

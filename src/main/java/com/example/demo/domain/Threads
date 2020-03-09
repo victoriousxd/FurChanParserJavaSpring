@@ -1,0 +1,16 @@
+package com.example.demo.domain;
+/*
+ *     Threads Table Structure
+ *     board name | thread no | closed | last_modified | timestamp | sub | com | replies | archived
+ *
+ */
+public class Threads {
+    int thread_no;
+    String board;
+    boolean closed;
+    int timestamp;
+    int last_modified;
+    int replies;
+    boolean archived;
+}
+
